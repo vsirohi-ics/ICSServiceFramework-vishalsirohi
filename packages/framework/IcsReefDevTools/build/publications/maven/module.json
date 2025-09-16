@@ -1,0 +1,126 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ics.framework",
+    "module": "IcsReefDevTools",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.ics.framework",
+          "module": "IcsReefServiceFramework",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "IcsReefDevTools-1.0.0.jar",
+          "url": "IcsReefDevTools-1.0.0.jar",
+          "size": 3556,
+          "sha512": "20603a5cf6d70a859122ca1a528dea0be6ff13a78937ee0f2e80bafd61da3b2691a50cd5d9cc795dd17f3cac137e7ac537b305f7e1fb8ed1a54f0ea8648ecf35",
+          "sha256": "6a7db3fce5df39857240d61dcd500f4b14b40f9cfa4e6a1e65a5135081430d93",
+          "sha1": "27d32c69e7cdbbe2242a06a51447d3d1bd231deb",
+          "md5": "bf2ef54a7149c540670561a12abcdb97"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.ics.framework",
+          "module": "IcsReefCore",
+          "version": {
+            "requires": "1.0.0"
+          }
+        },
+        {
+          "group": "io.netty",
+          "module": "netty-all",
+          "version": {
+            "requires": "4.1.100.Final"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.core",
+          "module": "jackson-databind",
+          "version": {
+            "requires": "2.15.2"
+          }
+        },
+        {
+          "group": "org.slf4j",
+          "module": "slf4j-api",
+          "version": {
+            "requires": "2.0.7"
+          }
+        },
+        {
+          "group": "com.ics.framework",
+          "module": "IcsReefServiceFramework",
+          "version": {
+            "requires": "1.0.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "IcsReefDevTools-1.0.0.jar",
+          "url": "IcsReefDevTools-1.0.0.jar",
+          "size": 3556,
+          "sha512": "20603a5cf6d70a859122ca1a528dea0be6ff13a78937ee0f2e80bafd61da3b2691a50cd5d9cc795dd17f3cac137e7ac537b305f7e1fb8ed1a54f0ea8648ecf35",
+          "sha256": "6a7db3fce5df39857240d61dcd500f4b14b40f9cfa4e6a1e65a5135081430d93",
+          "sha1": "27d32c69e7cdbbe2242a06a51447d3d1bd231deb",
+          "md5": "bf2ef54a7149c540670561a12abcdb97"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "IcsReefDevTools-1.0.0-sources.jar",
+          "url": "IcsReefDevTools-1.0.0-sources.jar",
+          "size": 2349,
+          "sha512": "208a5001cf3fc02ab3f3a5cc313ea0432236b19e0c5fcaa9c71cb98e9f5ee8568b71e8e875bbbf8deadc4212775ba8edda7c68aac9dcfbc2ac3852da8c07e243",
+          "sha256": "ba6096e5dd35b2698439366d451a8a6c23f0b12199d6244cf29ef6f8b3350ad3",
+          "sha1": "329a7ee5086834c5d7e2c0a9fcce266ac941d22c",
+          "md5": "f0f0e651ce1c5302299f4da1569ee43d"
+        }
+      ]
+    }
+  ]
+}

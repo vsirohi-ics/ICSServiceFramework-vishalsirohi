@@ -1,0 +1,39 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = 'com.ics.framework'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+    withSourcesJar()
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    api 'com.ics.framework:IcsReefServiceFramework:1.0.0'
+    implementation 'com.ics.framework:IcsReefCore:1.0.0'
+    implementation 'io.netty:netty-all:4.1.100.Final'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'org.slf4j:slf4j-api:2.0.7'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from components.java
+            
+            pom {
+                name = 'ICS Reef Development Tools'
+                description = 'Development and testing tools for Reef Service Framework'
+            }
+        }
+    }
+}
