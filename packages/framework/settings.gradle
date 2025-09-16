@@ -1,0 +1,9 @@
+rootProject.name = 'reef-framework'
+
+include 'IcsReefServiceFramework'
+include 'IcsJsonProtocol'
+include 'IcsReefCore'
+include 'IcsReefServiceFrameworkImpl'
+include 'IcsReefServicePlugin'
+include 'IcsSmithyCodegen'
+include 'IcsReefDevTools'
